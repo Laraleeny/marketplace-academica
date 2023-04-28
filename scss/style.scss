@@ -71,20 +71,22 @@ h5 {
 
 .wrapper {
     position: relative;
-    max-width: 1560px;
-    margin: 0 auto;
-    padding: 0 116px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
 
+.content-wrapper {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 116px;
+}
+
 /*side-menu*/
 .side-menu {
     width: 92px;
-    height: 1117px;
-    margin: 6.3rem 0 0;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,7 +98,7 @@ h5 {
         border-radius: 12px;
     }
     &__logo {
-        margin-bottom: 51px;
+        margin: 51px 0;
     }
 }
 
@@ -117,7 +119,7 @@ h5 {
 }
 
 .side-menu-offers {
-    margin-bottom: 626px;
+    margin-bottom: auto;
     &__item {
         margin-bottom: 20px;
     }
@@ -172,7 +174,7 @@ h5 {
     z-index: 5;
     top: 0;
     width: 260px;
-    height: 1117px;
+    height: 100vh;
     background: #f5f5f5;
     border-radius: 12px;
 
@@ -193,7 +195,6 @@ h5 {
     }
 
     .side-menu-offers {
-        margin-bottom: 400px;
     }
     .link-study__icon {
         width: 260px;
@@ -330,15 +331,20 @@ h5 {
         display: none;
     }
     .side-menu_unfold {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 /*header*/
-.header__logo {
-    padding: 10.3rem 0 0;
-    margin-bottom: 8.1rem;
+.header {
+    width: 100%;
+    &__logo {
+        padding: 10.3rem 0 0;
+        margin-bottom: 8.1rem;
+    }
 }
+
 
 /*main*/
 .main {
