@@ -510,23 +510,29 @@ h5 {
         justify-content: center;
         background: #5355c6;
         border-radius: 8px;
-        height: 153px;
+        // height: 153px;
     }
-
     &__item {
+        position: relative;
         display: flex;
         flex-basis: 100%;
         align-items: center;
         border-radius: 6px;
         margin: 16px;
-        height: 121px;
+        // max-height: 121px;
     }
-
+    &__icon {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+    }
+    &__info {
+        padding-left: 169px;
+    }
     &__subtitle {
         letter-spacing: 0;
         color: #ffffff;
     }
-
     &__btn {
         display: inline-block;
         margin-left: auto;
@@ -534,7 +540,7 @@ h5 {
 }
 
 .clients__item_white {
-    @include item-color(45px 47px 42px 0, #fff);
+    @include item-color(45px 38px 42px 0, #fff);
 }
 
 /*aside*/

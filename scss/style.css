@@ -531,15 +531,22 @@ h5 {
   justify-content: center;
   background: #5355c6;
   border-radius: 8px;
-  height: 153px;
 }
 .clients__item {
+  position: relative;
   display: flex;
   flex-basis: 100%;
   align-items: center;
   border-radius: 6px;
   margin: 16px;
-  height: 121px;
+}
+.clients__icon {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+.clients__info {
+  padding-left: 169px;
 }
 .clients__subtitle {
   letter-spacing: 0;
@@ -551,7 +558,7 @@ h5 {
 }
 
 .clients__item_white {
-  padding: 45px 47px 42px 0;
+  padding: 45px 38px 42px 0;
   border: 1px solid #fff;
 }
 
@@ -772,11 +779,20 @@ h5 {
     gap: 20px;
   }
   .rating {
-    margin-top: 0;
+    margin: 0;
     flex-basis: 35%;
+  }
+  .chats {
+    margin-bottom: 0;
   }
   .tech-support {
     align-self: flex-start;
+  }
+  .tech-support__title {
+    margin: 0 56px 32px;
+  }
+  .tech-support__text {
+    padding-right: 20px;
   }
 }
 @media (max-width: 1045px) {
@@ -796,8 +812,15 @@ h5 {
   .position-list__item {
     padding-right: 15px;
   }
+  .aside__wrapper {
+    flex-flow: column nowrap;
+  }
   .tech-support {
-    order: -1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .tech-support__content {
+    top: 274px;
   }
 }
 @media (max-width: 1000px) {
@@ -832,6 +855,7 @@ h5 {
   }
   .profession__icon {
     padding-right: 0;
+    order: 2;
   }
   .profession__info {
     text-align: center;
@@ -839,14 +863,49 @@ h5 {
   .profession__btn {
     margin-left: 0;
   }
-  .aside__wrapper {
-    flex-flow: column nowrap;
+  .clients__item {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .clients__btn {
+    margin-left: 0;
   }
   .chats {
     margin-bottom: 0;
   }
-  .tech-support {
-    order: 2;
-    margin: 0 auto;
+}
+@media (max-width: 830px) {
+  .profession__title {
+    text-align: center;
+  }
+  .clients {
+    padding-left: 0;
+  }
+  .clients__item_white {
+    padding: 37px 37px 143px;
+  }
+  .clients__icon {
+    bottom: -7%;
+    left: 34%;
+  }
+  .clients__info {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 660px) {
+  .content-wrapper {
+    padding: 0 15px;
+  }
+  .header {
+    width: auto;
+  }
+  .side-menu {
+    display: none;
+  }
+}
+@media (max-width: 372px) {
+  .clients__icon {
+    left: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
