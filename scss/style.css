@@ -565,7 +565,7 @@ h5 {
 /*aside*/
 .aside__wrapper {
   max-width: 320px;
-  height: 1128px;
+  padding-bottom: 50px;
 }
 
 /*rating list*/
@@ -761,7 +761,7 @@ h5 {
 }
 @media (max-width: 1200px) {
   .main {
-    grid-template: 1fr 1fr/minmax(auto, 971px);
+    grid-template: 1fr max-content/minmax(auto, 971px);
   }
   .clients__item-container {
     margin-bottom: 4rem;

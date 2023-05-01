@@ -10,7 +10,7 @@
 
 @media (max-width: 1200px) {
     .main {
-        grid-template: 1fr 1fr / minmax(auto, 971px);
+        grid-template: 1fr max-content / minmax(auto, 971px);
     }
 
     .clients__item-container {
