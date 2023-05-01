@@ -682,13 +682,15 @@ h5 {
 }
 /*support*/
 .tech-support {
-    position: relative;
+    // position: relative;
     border-radius: 16px;
-    background: url(../assets/img/png/bg.png) 50% 79% no-repeat;
-    background-size: 231% 110%;
+    // background: url(./assets/img/png/tech-support.png) no-repeat;
+    background: url(../assets/img/png/tech-support.png) center 44%/ 310px no-repeat,
+        url(../assets/img/png/bg.png) 50% 183% / 240% 110% no-repeat;
+    // background-size: 231% 110%;
     &__title {
         max-width: 188px;
-        margin: 0 66px 32px;
+        margin: 0 66px 240px;
         padding: 10px 0 11px;
         font-size: 1.4rem;
         line-height: 1.6rem;
@@ -698,9 +700,9 @@ h5 {
         border-radius: 0px 0px 9px 9px;
     }
     &__content {
-        position: absolute;
-        left: 0;
-        top: 284px;
+        // position: absolute;
+        // left: 0;
+        // top: 284px;
         display: flex;
         background: #ffffff;
         border-radius: 0px 0px 16px 16px;
@@ -715,12 +717,13 @@ h5 {
     }
     &__btn {
         text-align: center;
-        padding: 25px 9px;
         background: #6889ff;
         border-radius: 0 0 16px 0;
     }
     &__btn-link {
         @include font($ffamily-main, 0.9rem, rgba(255, 255, 255, 0.52));
+        display: block;
+        padding: 25px 9px;
     }
 }
 
